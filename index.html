@@ -1,0 +1,73 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Special Gift ❤️</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Georgia, serif;
+  text-align: center;
+  color: #7b2948;
+  background: linear-gradient(135deg, #ffe0eb, #fff4f7, #f8d5e5);
+}
+.card {
+  width: 90%;
+  max-width: 420px;
+  padding: 35px 20px;
+  background: rgba(255,255,255,0.8);
+  border-radius: 25px;
+  box-shadow: 0 8px 30px #d89ab766;
+}
+.heart {
+  font-size: 55px;
+  animation: beat 1s infinite alternate;
+}
+h1 {
+  font-size: 32px;
+}
+p {
+  font-size: 17px;
+  line-height: 1.7;
+}
+button {
+  border: none;
+  border-radius: 30px;
+  padding: 15px 25px;
+  background: #d94f80;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+button:active {
+  transform: scale(0.96);
+}
+@keyframes beat {
+  to { transform: scale(1.15); }
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="heart">❤️</div>
+  <h1>A Little World<br>Made Just for You</h1>
+  <p>Every memory with you is a beautiful part of my story. 💗</p>
+  <p>Are you ready to open your special gift?</p>
+  <button onclick="openGift()">Open Your Gift 💌</button>
+  <p id="message"></p>
+</div>
+<script>
+function openGift() {
+  document.getElementById("message").innerHTML =
+    "Our beautiful story begins here... ❤️✨";
+}
+</script>
+</body>
+  </html>
